@@ -2,8 +2,12 @@ package com.gecineicristofolini.workshopmongo.domain;
 
 import java.util.Objects;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection="user")
 public class User {
 	
+	@org.springframework.data.annotation.Id
 	private String Id;
 	private String name;
 	private String email;
