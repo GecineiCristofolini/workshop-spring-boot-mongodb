@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
 	
 	@org.springframework.data.annotation.Id
-	private String Id;
+	private String id;
 	private String name;
 	private String email;
 	
@@ -18,17 +18,17 @@ public class User {
 
 	public User(String id, String name, String email) {
 		super();
-		Id = id;
+		this.id = id;
 		this.name = name;
 		this.email = email;
 	}
 
 	public String getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(String id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getName() {
@@ -49,7 +49,7 @@ public class User {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(Id);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -61,7 +61,7 @@ public class User {
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		return Objects.equals(Id, other.Id);
+		return Objects.equals(id, other.id);
 	}
 	
 	
