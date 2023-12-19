@@ -2,7 +2,7 @@ package com.gecineicristofolini.workshopmongo.resources;
 
 
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.gecineicristofolini.workshopmongo.domain.Post;
-import com.gecineicristofolini.workshopmongo.domain.User;
-import com.gecineicristofolini.workshopmongo.dto.UserDTO;
+
 import com.gecineicristofolini.workshopmongo.services.PostService;
 
 
